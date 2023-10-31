@@ -11,12 +11,12 @@ import (
 )
 
 func main() {
-	srcDir := flag.String("s", "", "Source directory")
-	targetDir := flag.String("t", "", "Target directory")
-	sourceFileType := flag.String("sft", ".jpg", "The type of file to rename")
-	prefix := flag.String("p", "", "The prefix to be added to every renamed file.")
+	srcDir := flag.String("s", "", "The source directory whose content is to be renamed.")
+	targetDir := flag.String("t", "", "The target directory to store renamed content.")
+	sourceFileType := flag.String("sft", ".jpg", "The type of files to rename from the source directory.")
+	prefix := flag.String("p", "", "The prefix to use when renaming files.")
 	// change file extension
-	targetFileType := flag.String("tft", "", "New file extension of renamed files.")
+	targetFileType := flag.String("tft", "", "The new extension to give renamed files.")
 	// sortCriteria := flag.String("sc", "", "The criteria to sort by")
 	flag.Parse()
 
